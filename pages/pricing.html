@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing | Preplaced</title>
+    <link rel="stylesheet" href="../public/css/styles.css">
+    <style>
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        .pricing-card {
+            background: var(--color-white);
+            border: 2px solid var(--color-border);
+            border-radius: 1rem;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s;
+        }
+        .pricing-card.featured {
+            border-color: var(--color-accent);
+            transform: scale(1.05);
+            box-shadow: 0 8px 24px rgba(246, 84, 40, 0.2);
+        }
+        .pricing-card:hover {
+            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+        }
+        .price {
+            font-size: 3rem;
+            font-weight: bold;
+            color: var(--color-primary);
+            margin: 1rem 0;
+        }
+        .price-period {
+            font-size: 1rem;
+            color: var(--color-secondary);
+            font-weight: normal;
+        }
+        .pricing-features {
+            list-style: none;
+            margin: 2rem 0;
+            text-align: left;
+        }
+        .pricing-features li {
+            padding: 0.75rem 0;
+            border-bottom: 1px solid var(--color-border);
+        }
+        .pricing-features li:last-child {
+            border-bottom: none;
+        }
+        .pricing-features li:before {
+            content: "✓ ";
+            color: var(--color-accent);
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">Preplaced</a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="explore-mentors.html">Explore Mentors</a></li>
+                <li><a href="success-stories.html">Success Stories</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html" class="btn-secondary">Login</a></li>
+                <li><a href="signup.html" class="btn-primary">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="section">
+        <div class="container">
+            <h1 class="section-title">Choose Your Plan</h1>
+            <p class="section-subtitle">Select the mentorship plan that best fits your career goals</p>
+
+            <div class="pricing-grid">
+                <!-- Basic Plan -->
+                <div class="pricing-card">
+                    <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Basic</h3>
+                    <div class="price">
+                        ₹9,999<span class="price-period">/month</span>
+                    </div>
+                    <p style="color: var(--color-secondary); margin-bottom: 2rem;">Perfect for getting started</p>
+                    <ul class="pricing-features">
+                        <li>2 x 1:1 Live Sessions per month</li>
+                        <li>Unlimited Chat with Mentor</li>
+                        <li>Basic Learning Resources</li>
+                        <li>Email Support</li>
+                        <li>Monthly Progress Review</li>
+                    </ul>
+                    <a href="signup.html?plan=basic" class="btn-secondary" style="width: 100%; display: block; text-align: center;">Get Started</a>
+                </div>
+
+                <!-- Pro Plan (Featured) -->
+                <div class="pricing-card featured">
+                    <div style="background: var(--color-accent); color: white; padding: 0.5rem; border-radius: 0.5rem; margin-bottom: 1rem; font-weight: 600;">Most Popular</div>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Pro</h3>
+                    <div class="price">
+                        ₹19,999<span class="price-period">/month</span>
+                    </div>
+                    <p style="color: var(--color-secondary); margin-bottom: 2rem;">Best for serious career growth</p>
+                    <ul class="pricing-features">
+                        <li>4 x 1:1 Live Sessions per month</li>
+                        <li>Unlimited Chat with Mentor</li>
+                        <li>Curated Learning Resources & Tasks</li>
+                        <li>Priority Support</li>
+                        <li>Bi-weekly Progress Reviews</li>
+                        <li>Resume & Interview Preparation</li>
+                        <li>Job Referral Support</li>
+                    </ul>
+                    <a href="signup.html?plan=pro" class="btn-primary" style="width: 100%; display: block; text-align: center;">Get Started</a>
+                </div>
+
+                <!-- Premium Plan -->
+                <div class="pricing-card">
+                    <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Premium</h3>
+                    <div class="price">
+                        ₹34,999<span class="price-period">/month</span>
+                    </div>
+                    <p style="color: var(--color-secondary); margin-bottom: 2rem;">For accelerated career growth</p>
+                    <ul class="pricing-features">
+                        <li>8 x 1:1 Live Sessions per month</li>
+                        <li>Unlimited Chat with Mentor</li>
+                        <li>Premium Curated Resources</li>
+                        <li>24/7 Priority Support</li>
+                        <li>Weekly Progress Reviews</li>
+                        <li>Complete Career Guidance</li>
+                        <li>Guaranteed Job Referrals</li>
+                        <li>Certification Program</li>
+                        <li>Access to Exclusive Events</li>
+                    </ul>
+                    <a href="signup.html?plan=premium" class="btn-secondary" style="width: 100%; display: block; text-align: center;">Get Started</a>
+                </div>
+            </div>
+
+            <div style="background: var(--color-light-gray); padding: 2rem; border-radius: 1rem; margin-top: 4rem; text-align: center;">
+                <h2 style="font-size: 1.5rem; margin-bottom: 1rem;">Not sure which plan to choose?</h2>
+                <p style="color: var(--color-secondary); margin-bottom: 1.5rem;">Schedule a free consultation call with our team to find the perfect plan for you.</p>
+                <a href="contact.html" class="btn-primary">Schedule Free Consultation</a>
+            </div>
+
+            <div style="margin-top: 4rem;">
+                <h2 style="font-size: 1.75rem; text-align: center; margin-bottom: 2rem;">Frequently Asked Questions</h2>
+                <div style="max-width: 800px; margin: 0 auto;">
+                    <div style="margin-bottom: 2rem;">
+                        <h3 style="font-size: 1.125rem; margin-bottom: 0.5rem; color: var(--color-primary);">Can I change my plan later?</h3>
+                        <p style="color: var(--color-secondary);">Yes, you can upgrade or downgrade your plan at any time. Changes will be reflected in your next billing cycle.</p>
+                    </div>
+                    <div style="margin-bottom: 2rem;">
+                        <h3 style="font-size: 1.125rem; margin-bottom: 0.5rem; color: var(--color-primary);">What if I'm not satisfied?</h3>
+                        <p style="color: var(--color-secondary);">We offer a 7-day money-back guarantee. If you're not satisfied with your mentorship experience, we'll refund your payment.</p>
+                    </div>
+                    <div style="margin-bottom: 2rem;">
+                        <h3 style="font-size: 1.125rem; margin-bottom: 0.5rem; color: var(--color-primary);">How do I get matched with a mentor?</h3>
+                        <p style="color: var(--color-secondary);">After signing up, you'll fill out a brief questionnaire about your career goals. Our team will match you with the best mentor based on your needs.</p>
+                    </div>
+                    <div style="margin-bottom: 2rem;">
+                        <h3 style="font-size: 1.125rem; margin-bottom: 0.5rem; color: var(--color-primary);">Are there any long-term commitments?</h3>
+                        <p style="color: var(--color-secondary);">No, all our plans are month-to-month. You can cancel anytime without any penalties.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Preplaced</h3>
+                <p style="opacity: 0.8; margin-top: 1rem;">Supercharge your career with 1:1 Long Term Mentorship</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="explore-mentors.html">Explore Mentors</a></li>
+                    <li><a href="success-stories.html">Success Stories</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <ul>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 2rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1);">
+            <p style="opacity: 0.8;">&copy; 2024 Preplaced. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../public/js/main.js"></script>
+</body>
+</html>
+
