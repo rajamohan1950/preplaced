@@ -4,6 +4,7 @@
   "description": "Preplaced.com static frontend clone",
   "main": "index.html",
   "scripts": {
+    "build": "echo 'Static site - no build needed'",
     "start": "npx serve -s . -l $PORT",
     "dev": "npx serve -s . -l 8000"
   },
@@ -15,7 +16,7 @@
   "author": "",
   "license": "MIT",
   "engines": {
-    "node": ">=14.0.0"
+    "node": ">=18.0.0"
   }
 }
 
