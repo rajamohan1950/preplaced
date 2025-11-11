@@ -1,0 +1,21 @@
+{
+  "name": "preplaced-clone",
+  "version": "1.0.0",
+  "description": "Preplaced.com static frontend clone",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve -s . -l $PORT",
+    "dev": "npx serve -s . -l 8000"
+  },
+  "keywords": [
+    "mentorship",
+    "preplaced",
+    "static-site"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
+
